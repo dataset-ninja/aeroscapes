@@ -71,7 +71,6 @@ def convert_and_upload_supervisely_project(
     ### Function should read local dataset and upload it to Supervisely project, then return project info.###
     # raise NotImplementedError("The converter should be implemented manually.")
 
-    project_name = "Aeroscapes"
     dataset_path = "aeroscapes"
     img_path = os.path.join(dataset_path, "JPEGImages")
     segmentation_path = os.path.join(dataset_path, "Visualizations")
