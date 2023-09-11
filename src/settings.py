@@ -31,7 +31,7 @@ RELEASE_DATE: Optional[str] = "2018-05-25"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = "https://github.com/ishann/aeroscapes/commits/master"
+HOMEPAGE_URL: str = "https://github.com/ishann/aeroscapes"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = 3550664
