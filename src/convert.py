@@ -77,18 +77,18 @@ def convert_and_upload_supervisely_project(
     batch_size = 50
 
     classes = {
-        "Background": (0, 0, 0),
-        "Person": (192, 128, 128),
-        "Bike": (0, 128, 0),
-        "Car": (128, 128, 128),
-        "Drone": (128, 0, 0),
-        "Boat": (0, 0, 128),
-        "Animal": (192, 0, 128),
-        "Obstacle": (192, 0, 0),
-        "Construction": (192, 128, 0),
-        "Vegetation": (0, 64, 0),
-        "Road": (128, 128, 0),
-        "Sky": (0, 128, 128),
+        "background": (0, 0, 0),
+        "person": (192, 128, 128),
+        "bike": (0, 128, 0),
+        "car": (128, 128, 128),
+        "drone": (128, 0, 0),
+        "boat": (0, 0, 128),
+        "animal": (192, 0, 128),
+        "obstacle": (192, 0, 0),
+        "construction": (192, 128, 0),
+        "vegetation": (0, 64, 0),
+        "road": (128, 128, 0),
+        "sky": (0, 128, 128),
     }
 
     train_set = os.path.join(dataset_path, "ImageSets", "trn.txt")
