@@ -124,6 +124,8 @@ def convert_and_upload_supervisely_project(
     def create_ann(image_path):
         labels = []
         image_name = get_file_name(os.path.basename(image_path))
+        tag_value = int(image_name[:6])
+        tag = sly.Tag(tag_seq, value=tag_value)
         image_np = sly.imaging.image.read(image_path)[:, :, 0]
         img_height = image_np.shape[0]
         img_wight = image_np.shape[1]
@@ -138,13 +140,14 @@ def convert_and_upload_supervisely_project(
                     curr_bitmap = sly.Bitmap(mask)
                     curr_label = sly.Label(curr_bitmap, obj_class)
                     labels.append(curr_label)
-        return sly.Annotation(img_size=(img_height, img_wight), labels=labels)
+        return sly.Annotation(img_size=(img_height, img_wight), labels=labels, img_tags=[tag])
 
     obj_classes = [
         sly.ObjClass(label_name, sly.Bitmap, classes[label_name]) for label_name in classes
     ]
+    tag_seq = sly.TagMeta("sequence", sly.TagValueType.ANY_NUMBER)
     project = api.project.create(workspace_id, project_name, change_name_if_conflict=True)
-    meta = sly.ProjectMeta(obj_classes=obj_classes)
+    meta = sly.ProjectMeta(obj_classes=obj_classes, tag_metas=[tag_seq])
     api.project.update_meta(project.id, meta.to_json())
 
     dataset = dataset_val = api.dataset.create(project.id, "val", change_name_if_conflict=True)
