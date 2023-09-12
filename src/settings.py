@@ -36,7 +36,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://github.com/ishann/aeroscapes"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 3548236
+PREVIEW_IMAGE_ID: int = 3729678
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/aeroscapes"
@@ -68,7 +68,7 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Carnegie Mellon University
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.cmu.edu/"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] =  {
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
     "__PRETEXT__": "Alternatively, images could be split into 30 video sequences: ***seq1***, ***seq2***, etc"
 }
 TAGS: Optional[List[str]] = None
