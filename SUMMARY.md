@@ -2,6 +2,6 @@
 
 The dataset consists of 3269 images with 18897 labeled objects belonging to 12 different classes including *background*, *vegetation*, *road*, and other: *person*, *obstacle*, *construction*, *bike*, *car*, *sky*, *drone*, *animal*, and *boat*. There are 2 splits in the dataset: *train* (2621 images) and *val* (648 images). Additionally, every image contains id of its video ***sequence*** (total 141). The dataset was released in 2018 by the Carnegie Mellon University.
 
-Here are the visualized examples for each of the 12 classes:
+Here are the visualized examples for the classes:
 
 [Dataset classes](https://github.com/dataset-ninja/aeroscapes/raw/main/visualizations/classes_preview.webm)
