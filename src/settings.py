@@ -22,7 +22,7 @@ HIDE_DATASET = False  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.CC_BY_SA_4_0()
+LICENSE: License = License.CC_BY_SA_4_0(source_url="https://github.com/ishann/aeroscapes/blob/master/LICENSE")
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.DroneInspection()]
 CATEGORY: Category = Category.Drones()
 
