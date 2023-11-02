@@ -8,4 +8,4 @@ Real-time autonomous systems heavily rely on scene understanding to make decisio
 
 Aerial robots provide the advantage of exploring diverse environments and viewpoints that ground-based autonomous cars cannot access. This led to the creation of the AeroScapes Dataset, featuring images captured by drones at altitudes of 5-50 meters. These images come with segmentation maps, labeling both stuff classes (*vegetation*, *roads*, *sky*, *construction*) and thing classes (*person*, *bikes*, *cars*, *drones*, *boats*, *obstacles*, *animals*).
 
-<img src="https://i.ibb.co/GQYCgrZ/data-montage-1.jpg" alt="image" width="800">
+<img src="hhttps://github.com/dataset-ninja/aeroscapes/assets/123257559/e21dc627-e6f0-4fea-8150-74218109214d" alt="image" width="800">
