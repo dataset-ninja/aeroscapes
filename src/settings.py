@@ -63,6 +63,7 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = "https://github.com/ishann/aeroscapes#reference"
 AUTHORS: Optional[List[str]] = ["Ishan Nigam", "Chen Huang", "Deva Ramanan"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["ishannigam@gmail.com"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Carnegie Mellon University"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.cmu.edu/"
@@ -118,6 +119,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
