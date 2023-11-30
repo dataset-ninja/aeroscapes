@@ -1,6 +1,6 @@
 Dataset **AeroScapes** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/2/Y/JA/Y5cbBiOFG9xLIrO9rNTCzKyGrMTkSj38Q3SUm26vqV2XZJFMl3JHWu6UOXUXjxOekEmjA3kcCktauKPVydAizbtIAAge7KsmqG4aj9QP7N0FsHjBjrnGQ2q0EMAd.tar)
+ [Download](https://www.dropbox.com/scl/fi/kfooo998jn81r3zt82wbu/aeroscapes-DatasetNinja.tar?rlkey=ypjyl4w9pxnxzd71p78fw9dh5&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
